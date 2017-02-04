@@ -32,6 +32,13 @@
         <div class="media-left media-middle">
           <img class="media-object img-thumbnail" ng-src={{dc.dish.image}} alt="Uthappizza"/>
         </div>
+        <div class="media-body">
+          <h2 class="media-heading">{{dc.dish.name}}
+            <span class="label label-danger">{{dc.dish.label}}</span>
+            <span class="badge">{{dc.dish.price | currency}}</span>
+          </h2>
+          <p>{{dc.dish.description}}</p>
+        </div>
       </div>
     </div>
     <div class="col-xs-9 col-xs-offset-1">
