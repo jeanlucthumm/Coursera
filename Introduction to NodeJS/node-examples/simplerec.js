@@ -1,12 +1,4 @@
-var rect = {
-    perimeter: function (x, y) {
-        return (2 * (x + y));
-    },
-
-    area: function (x, y) {
-        return (x * y);
-    }
-};
+var rect = require('./rectangle-1');
 
 function solveRect(w, h) {
     console.log("Solving rect for dimensions: " + w + " X " + h);
