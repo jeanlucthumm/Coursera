@@ -1,19 +1,19 @@
+var argv = require("yargs")
+  .argv;
+
 var rect = require('./rectangle');
 
 function solveRect(w, h) {
-    console.log("Solving rect for dimensions: " + w + " X " + h);
+  console.log("Solving rect for dimensions: " + w + " X " + h);
 
-    // Check dimensions are correct
-    if (w < 0 || h < 0) {
-        console.log("Rectangle cannot have negative dimensions");
-        return;
+  rect(w, h, function (err, rectangle) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Perimeter: " + rectangle.perimeter());
+      console.log("Area: " + rectangle.area());
     }
-
-    // Output computations
-    console.log("Perimeter: " + rect.perimeter(w, h));
-    console.log("Area: " + rect.area(w, h));
+  });
 }
 
-solveRect(2, 5);
-solveRect(3, 5);
-solveRect(-1, 2);
+solveRect(argv.w, argv.h);
