@@ -1,4 +1,4 @@
-var rect = require('./rectangle-1');
+var rect = require('./rectangle');
 
 function solveRect(w, h) {
     console.log("Solving rect for dimensions: " + w + " X " + h);
