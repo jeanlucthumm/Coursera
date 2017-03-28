@@ -1,0 +1,15 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "Home page: [Introduction to Server-side Development with NodeJS](https://www.coursera.org/learn/server-side-development)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jean-Luc Thumm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "html": "^1.0.0"
+  }
+}
